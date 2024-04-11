@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import styles from "./GeneratedUrl.module.css";
-import truncateUrl, { truncateUrlByWidth } from "@/app/utils/truncateUrl";
+import  { truncateUrlByWidth } from "@/app/utils/truncateUrl";
 import Link from "next/link";
 import useWindowWidth from "@/app/hooks/useWindowWidth";
 import copyToClipboard from "@/app/utils/copyToClipboard";
