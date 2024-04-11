@@ -16,12 +16,15 @@ const ContentComponent = () => {
             src={illustration}
             alt="illustration-working"
             className={styles.img}
+            priority
+
           />
         ) : (
           <Image
             src={illustrationDestop}
             alt="illustration-working"
             className={styles.img}
+            priority
           />
         )}
       </div>

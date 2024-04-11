@@ -3,10 +3,9 @@ import { useState } from "react";
 import { AdvancedStats } from "./components/AdvancedStats/AdvancedStats";
 import ContentComponent from "./components/ContentComponent/ContentComponent";
 import Footer from "./components/Footer/Footer";
- import ShortenComponent from "./components/ShortenComponent/ShortenComponent";
+import ShortenComponent from "./components/ShortenComponent/ShortenComponent";
 import styles from "./page.module.css";
 import Header from "./components/Header/Header";
-import GeneratedUrl from "./components/GeneratedUrl/GeneratedUrl";
 
 export default function Home() {
   const [url,setUrl]=useState<string>(" ");
