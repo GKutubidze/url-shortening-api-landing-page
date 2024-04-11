@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./AdvancedItem.module.css";
 import Image from "next/image";
-import ImageComponent from "../ImageComponent/ImageComponent";
 interface Props {
   img: string;
   title: string;
