@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./HeaderDesktop.module.css";
-import ImageComponent from "../ImageComponent/ImageComponent";
+import Image from "next/image";
 import logo from "./../../../../public/logo.svg";
 import Link from "next/link";
 
@@ -9,7 +9,7 @@ export const HeaderDesktop = () => {
     <div className={styles.main}>
       <div className={styles.container}>
         <Link href="/">
-          <ImageComponent
+          <Image
             src={logo}
             alt="Header Logo"
             className={styles.img}

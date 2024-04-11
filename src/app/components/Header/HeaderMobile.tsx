@@ -1,15 +1,14 @@
  import React from 'react'
 import styles from "./HeaderMobile.module.css"
-import ImageComponent from '../ImageComponent/ImageComponent'
 import logo from "./../../../../public/logo.svg"
-import useWindowWidth from '@/app/hooks/useWindowWidth'
+import Image from 'next/image'
 import Link from 'next/link'
  const HeaderMobile = () => {
     
   return (
     <div className={styles.main}>
       <Link href="/">
-      <ImageComponent src={logo} alt='Header Logo' className={styles.img} priority={true}/>
+      <Image src={logo} alt='Header Logo' className={styles.img} />
 
       </Link>
 

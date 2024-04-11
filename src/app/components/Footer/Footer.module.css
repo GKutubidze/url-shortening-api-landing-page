@@ -55,7 +55,10 @@
   align-items: baseline;
   margin-bottom: 56px;
 }
-
+.link{
+  all: unset;
+  cursor: pointer;
+}
 @media (min-width: 768px) {
   .navigation {
     flex-direction: row;

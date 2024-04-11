@@ -12,10 +12,9 @@ interface Props {
 const ShortenComponent = (props: Props) => {
   const { url, setUrl, tempUrl, setTempUrl } = props;
   const [isCklicked, setIsClcked] = useState<boolean>(true);
-  const [startingUrl,setStartingUrl]=useState<string>("");
-  console.log(isCklicked)
+  const [startingUrl, setStartingUrl] = useState<string>("");
   const handleClick = () => {
-     setStartingUrl(tempUrl);
+    setStartingUrl(tempUrl);
     shortenUrl(tempUrl)
       .then((shortUrl) => {
         if (shortUrl) {
@@ -44,7 +43,11 @@ const ShortenComponent = (props: Props) => {
           Shorten It!
         </button>
       </div>
-      <GeneratedUrl startingUrl={startingUrl} generatedUrl={url}  isCklicked={isCklicked}/>
+      <GeneratedUrl
+        startingUrl={startingUrl}
+        generatedUrl={url}
+        isCklicked={isCklicked}
+      />
     </div>
   );
 };

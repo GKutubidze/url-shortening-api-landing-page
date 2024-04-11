@@ -4,6 +4,7 @@ import Boost from './Boost'
 import logo from "../../../../public/logo.svg"
 import Image from 'next/image'
 import ImageComponent from '../ImageComponent/ImageComponent'
+import Link from 'next/link'
 const Footer = () => {
   return (
     <div className={styles.main}>
@@ -29,7 +30,11 @@ const Footer = () => {
             {
               SocialIcons.map((item,key)=>{
                 return(
-                  <ImageComponent src={item.path} key={key} alt={item.name} priority={true}/>
+                  <Link key={key} href={item.src}  className={styles.link} target='_blank'>
+                  <ImageComponent src={item.path}  alt={item.name} priority={true}/>
+
+                  </Link>
+                   
                 )
               })
             }
@@ -59,19 +64,25 @@ const Data=[
 const SocialIcons=[
   {
     name:"facebook",
-    path:"/icon-facebook.svg"
+    path:"/icon-facebook.svg",
+    src:"https://www.facebook.com/"
   },
   {
     name:"twitter",
-    path:"/icon-twitter.svg"
+    path:"/icon-twitter.svg",
+    src:"https://twitter.com/"
+    
   },
  
   {
     name:"pinterest",
-    path:"/icon-pinterest.svg"
+    path:"/icon-pinterest.svg",
+    src:"https://www.pinterest.com/"
+
   },
   {
     name:"instagram",
-    path:"/icon-instagram.svg"
+    path:"/icon-instagram.svg",
+    src:"https://www.instagram.com/"
   }
 ]
