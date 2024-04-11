@@ -1,23 +1,21 @@
-"use client";
 import React from "react";
 import styles from "./ContentComponent.module.css";
 import illustration from "../../../../public/illustration-working.svg";
 import illustrationDestop from "../../../../public/working-with-computer.svg";
 import Image from "next/image";
-import ShortenComponent from "../ShortenComponent/ShortenComponent";
-import useWindowWidth from "@/app/hooks/useWindowWidth";
-const ContentComponent = () => {
-  const width = useWindowWidth();
+type Props = {
+  width: number;
+};
+const ContentComponent = (props: Props) => {
   return (
     <div className={styles.main}>
       <div>
-        {width < 1024 ? (
+        {props.width < 1024 ? (
           <Image
             src={illustration}
             alt="illustration-working"
             className={styles.img}
             priority
-
           />
         ) : (
           <Image

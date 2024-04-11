@@ -3,8 +3,7 @@ import styles from "./Footer.module.css"
 import Boost from './Boost'
 import logo from "../../../../public/logo.svg"
 import Image from 'next/image'
-import ImageComponent from '../ImageComponent/ImageComponent'
-import Link from 'next/link'
+ import Link from 'next/link'
 const Footer = () => {
   return (
     <div className={styles.main}>
@@ -31,7 +30,7 @@ const Footer = () => {
               SocialIcons.map((item,key)=>{
                 return(
                   <Link key={key} href={item.src}  className={styles.link} target='_blank'>
-                  <ImageComponent src={item.path}  alt={item.name} priority={true}/>
+                  <Image src={item.path}  alt={item.name} priority={true} width={24} height={24}/>
 
                   </Link>
                    
