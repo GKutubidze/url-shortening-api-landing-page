@@ -1,0 +1,54 @@
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 165px 0 165px;
+    /* padding: 40px 24px 0 24px; */
+
+
+}
+
+.nav{
+    display: flex;
+    gap: 29px;
+}
+
+.navItem{
+    text-transform: capitalize;
+}
+
+.container{
+    display: flex;
+    gap: 45px;
+ }
+
+ .login{
+    all: unset;
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--grayish-violet);
+    cursor: pointer;
+ }
+
+ .signup{
+    all: unset;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    background-color: var(--cyan);
+    min-height: 40px;
+    border-radius: 28px;
+    min-width: 105px;
+    text-align: center;
+    cursor: pointer;
+ }
+
+ .auth{
+    display: flex;
+    gap: 37px;
+ }
+
+ .link{
+    all: unset;
+    cursor: pointer;
+ }

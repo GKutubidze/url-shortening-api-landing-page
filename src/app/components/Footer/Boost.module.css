@@ -1,0 +1,40 @@
+.main {
+  background-image: url("../../../../public/bg-boost-mobile.svg");
+  background-color: var(--dark-violet);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 90px 0;
+}
+.boost {
+  font-size: 28px;
+  color: white;
+  line-height: 48px;
+  letter-spacing: -0.7px;
+}
+.button {
+  height: 48px;
+  background-color: var(--cyan);
+  color: white;
+  width: 197px;
+  border-radius: 28px;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .main {
+    background-image: url("../../../../public/bg-boost-desktop.svg");
+    background-repeat: no-repeat;
+    min-height: 250px;
+    padding: 57px 0;
+
+  }
+  .button{
+    height: 56px;
+ 
+  }
+}
